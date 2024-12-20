@@ -43,7 +43,7 @@ EXAMPLE 1
     <summary>CheatSheet</summary>
 
     ```bash
-    oc new-app --name=hello https://github.com/ozyohthree/DO288-apps#practice1 --context-dir=nodejs-helloword
+    oc new-app --name=hello https://github.com/ozyohthree/DO288-apps#practice1 --context-dir=nodejs-helloworld
 
     # test 
     curl -s https://hello-hello-world*  
