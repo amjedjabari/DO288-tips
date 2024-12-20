@@ -32,7 +32,7 @@ set shiftwidth=2
 ### PRACTICE 1: Fix build issues
 
 EXAMPLE 1
-  - repo: https://github.com/ozyohthree/DO288-apps 
+  - repo: https://github.com/amjedjabari/DO288-apps 
   - branch name:practice1
   - folder name: nodejs-helloworld
   - project name: hello-world
@@ -43,7 +43,7 @@ EXAMPLE 1
     <summary>CheatSheet</summary>
 
     ```bash
-    oc new-app --name=hello https://github.com/ozyohthree/DO288-apps#practice1 --context-dir=nodejs-helloworld
+    oc new-app --name=hello https://github.com/amjedjabari/DO288-apps#practice1 --context-dir=nodejs-helloworld
 
     # test 
     curl -s https://hello-hello-world*  
@@ -54,7 +54,7 @@ EXAMPLE 1
     <br>
 
 EXAMPLE 2
-  - repo: https://github.com/ozyohthree/DO288-apps 
+  - repo: https://github.com/amjedjabari/DO288-apps 
   - branch name:source-build
   - folder name: nodejs-helloworld
   - project name: greet-proj
@@ -67,7 +67,7 @@ EXAMPLE 2
     <summary>CheatSheet</summary>
 
     ```bash
-    oc new-app --name=hello nodejs:16-ubi8~https://github.com/ozyohthree/DO288-apps#source-build \
+    oc new-app --name=hello nodejs:16-ubi8~https://github.com/amjedjabari/DO288-apps#source-build \
       --build-env npm_config_registry=http://nexus-infra.apps.ocp4.example.com/repository/npm \
       --context-dir=nodejs-helloword
 
@@ -137,7 +137,7 @@ EXAMPLE 2
 
 ### PRACTICE 4: Build and Deploy using Docker Strategy
 
-- Git repo: https://github.com/ozyohthree/spring-petclinic.git
+- Git repo: https://github.com/amjedjabari/spring-petclinic.git
 - application name: pets
 - Strategy: Dockerfile
 - Should be able to redeploy with 'oc start-build'
@@ -148,7 +148,7 @@ EXAMPLE 2
 
    ```bash
    # build
-  oc new-build https://github.com/ozyohthree/spring-petclinic.git --strategy=docker
+  oc new-build https://github.com/amjedjabari/spring-petclinic.git --strategy=docker
   
   # check logs 
   oc logs -f bc/spring-petclinic
